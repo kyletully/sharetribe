@@ -131,4 +131,10 @@ Rails.application.configure do
 
   # We don't need schema dumps in this environment
   config.active_record.dump_schema_after_migration = false
+  
+  puts '##### START EMAIL SETTINGS #####'
+  puts ActionMailer::Base.smtp_settings
+  puts ActionMailer::Base.delivery_method
+  puts '##### END EMAIL SETTINGS #####'
+  
 end
